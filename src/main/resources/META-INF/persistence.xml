@@ -7,6 +7,9 @@
     <persistence-unit name="myPU" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>org.example.User</class>
+        <class>org.example.Author</class>
+        <class>org.example.Book</class>
+        <class>org.example.Category</class>
         <properties>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE"/>
             <property name="jakarta.persistence.jdbc.user" value="sa"/>
